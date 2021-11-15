@@ -1,4 +1,4 @@
-# cmsc389T-web-template
+# Joseph Zietowski personal website
 
 This is the personal website for Joseph Zietowski created for project 5 of CMSC389T
 The site can be viewed here: https://jdzeke.github.io/cmsc389T-web-template/
