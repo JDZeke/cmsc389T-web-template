@@ -1,9 +1,9 @@
-name: clone workflow
+name: clean workflow
 on:
   workflow_dispatch:
 jobs:
   job_one:
-    name: Clone
+    name: Clean
     runs-on: ubuntu-latest
     steps:
       - name: testing
@@ -14,5 +14,5 @@ jobs:
           password: ${{secrets.PASSWORD}}
           port: ${{secrets.Port}}
           script: |
-            ssh-keyscan -H github.com >> ~/.ssh/known_hosts
-            git clone git@github.com:JDZeke/cmsc389T-web-template.git
+            unalias rm
+            rm -rf cmsc389T-web-template
