@@ -1,0 +1,17 @@
+name: clone workflow
+on:
+  workflow_dispatch:
+jobs:
+  job_one:
+    name: clone
+    runs-on: ubuntu-latest
+    steps:
+      - name: testing
+        uses: actions/checkout@v2
+        with: 
+          host: ${{secrets.HOST}}
+          username: ${{secrets.USERNAME}}
+          password: ${{secrets.PASSWORD}}
+          port: ${{secrets.Port}}
+          script: |
+            git clone
